@@ -231,9 +231,9 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-# RAG: keep documents/manifest.csv tracked; ignore downloaded/generated files
+# RAG: the built search index (documents/chroma/) is tracked so the deployed app never needs to
+# download the PDFs again; the PDFs themselves and temporary files stay out of git.
 documents/pdfs/
 documents/index.json
 documents/index.json.tmp
-documents/chroma/
 documents/manifest.csv.tmp
